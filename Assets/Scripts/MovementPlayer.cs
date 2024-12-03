@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MovementPlayer : MonoBehaviour
 {
@@ -62,11 +63,11 @@ public class MovementPlayer : MonoBehaviour
             chave++;
         }
 
-        /*if (other.gameObject.CompareTag("PassaFase0"))
+        if (other.gameObject.CompareTag("PassaFase0") && chave == 1)
         {
             SceneManager.LoadScene("Fase2");
-            chaves = 0;
-        }*/
+            chave = 0;
+        }
     }
 
 }
